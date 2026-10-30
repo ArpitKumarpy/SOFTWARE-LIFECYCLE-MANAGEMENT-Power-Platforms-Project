@@ -1,1 +1,7 @@
-# SOFTWARE-LIFECYCLE-MANAGEMENT-Power-Platforms-Project
+# SOFTWARE-LIFECYCLE-MANAGEMENT: A Microsoft Power Platform Solution for Software Procurement, Approvals, License Allocation and Renewal Management 
+
+Software Lifecycle Manager (SLM) is an internal business application for managing the lifecycle of organizational software: discovering available products, requesting new software, obtaining approval, recording license allocation and monitoring renewal dates. The solution uses Dataverse as its central data store, a Canvas App as the employee-facing portal, a model-driven app as the procurement/IT workspace, and Power Automate for approval and renewal workflows. 
+
+The project was selected to be practical and recognizable without being a routine expense tracker or a generic CRUD application. Software subscriptions are recurring organizational commitments. Poor visibility can lead to duplicate purchases, unused licenses, missed renewals and fragmented approval records. SLM addresses these connected problems with a manageable, demonstrable workflow. 
+
+The Canvas App submission path has been tested successfully: a user selected software, submitted a request, and the resulting Dataverse record appeared with the expected fields and ReqStatus = Submitted. The model-driven app has been created with the four core tables and custom request views. Flow 1, the request approval engine, was reported as successfully tested. Flow 2, the license renewal monitor, has been started but its complete date logic, reminder actions and duplicate prevention still require confirmation. 
